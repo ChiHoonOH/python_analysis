@@ -1,0 +1,90 @@
+\\164.125.66.70\pyDev
+-----------------
+ID : idec 
+PW : pnnidec
+-------------------------
+[ 개발 환경 구축 ]
+1. third part installer 
+ - 아나콘다 다운로드
+   (https://www.anaconda.com/download)
+ - 분석등 작업에 필요한 여러 패키지가 상호 
+   연동에 문제 없는 묶음 단위 설치
+2. 다운로드후 설치
+ - 파이썬 버전 충돌이 될수도 있어서
+   기존에 설치된 python 제거후 설치
+3. 대화형 에디터 사용
+ - ipyhton 툴을 포함한 jupyter를 사용
+   
+   path 누락시
+   SETX PATH "%PATH%;C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3"
+
+   > 해당 프로젝트로 이동해서
+   > jupyter notebook
+   
+   or
+   
+   anaconda navigator 구동
+   주피터를 선택해서 구동
+   해당 드라이버를 루트로 디렉토리가 펼쳐짐
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+\\164.125.66.70\pyDev
+-----------------
+ID : idec 
+PW : pnnidec
+-------------------------
+[ 개발 환경 구축 ]
+1. third part installer 
+ - 아나콘다 다운로드
+   (https://www.anaconda.com/download)
+ - 분석등 작업에 필요한 여러 패키지가 상호 
+   연동에 문제 없는 묶음 단위 설치
+2. 다운로드후 설치
+ - 파이썬 버전 충돌이 될수도 있어서
+   기존에 설치된 python 제거후 설치
+3. 대화형 에디터 사용
+ - ipyhton 툴을 포함한 jupyter를 사용
+   
+   path 누락시
+   SETX PATH "%PATH%;C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3"
+
+   > 해당 프로젝트로 이동해서
+   > jupyter notebook
+   
+   or
+   
+   anaconda navigator 구동
+   주피터를 선택해서 구동
+   해당 드라이버를 루트로 디렉토리가 펼쳐짐
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
