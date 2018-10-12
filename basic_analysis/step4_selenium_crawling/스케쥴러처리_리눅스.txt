@@ -1,0 +1,61 @@
+# 스케쥴러 기본 처리
+# 1. 리눅스 접속
+# 2. 크론 탭 기본 사항
+- 리눅스에서 스케쥴(반복작업) 진행하는 담당 crontab
+- 현재 크론탭에 나와있는 스케쥴을 보고 싶다.
+> crontab -l # 근데아예 없으면 안된다.
+- 크론탭 편집(최초 구동시 에디터 선택목록이 나오면 nano 선택)
+> crontab -e
+#에디터 선택, 혹시 에디터를 잘못 선택했다면 select-editor를 입력하여 변경
+> # 기존 내용 지우고(최초),주석 작성
+> # crawling schduler edit page
+> 저장 : ctrl + x => y => enter
+- 크론탭의 내용 삭제
+> crontabl -r
+
+# 3. 주기 작성
+주기
+* * * * * 명령어
+----------------
+분(0~59) 시간(0~23) 일(1~31) 월(1~12) 요일(0~6)
+
+예) 매분마다(하루 수행 횟수 : 60 * 24 )
+* * * * * /home/ubuntu/sch/run.sh
+# 매주 금요일 4시 30분에 구동
+30 4 * * 5 /home/ubuntu/sch/run.sh
+# 매 10분마다 구동
+*/10 * * * * /home/ubuntu/sch/run.sh
+# 환율 3분 간격 시작 09~18
+*/3 9-18 * * 1-5 /home/ubuntu/sch/run.sh
+
+#4. run.sh 생성
+run.sh
+---------------
+python3 run.py
+---------------
+mkdir sch
+cd sch
+nano run.sh> 저장
+nano run.py > print('hello') 
+crontab -e
+
+* * * * * /home/ubuntu/sch/run.sh >> /home/ubuntu/sch/run.log 2>&1
+* * * * * /home/ubuntu/sch/run.sh >>(이어나가기) /home/ubuntu/sch/run.log 2>&1
+ 0:stdin
+ 1:stdout
+ 2:stderr
+ 오류 발새잇 stdout으로 리다이렉션 해라
+ >> run.sh의 출력을 run.log로 리다이렉션 해라.
+ 따라서, run.log에는 출력 결과 hello 혹은 에러 로그가 적재된다.
+ > 1분후
+ >cat run.log  => permission denied
+ chmod 777.run.sh
+ 
+>python3: can't open file 'run.py': [Errno 2] No such file or directory
+>nano run.sh
+> -------------------
+python3 ./run.py => 응 안되
+python3 /home/ubuntu/sch/run.py
+
+
+
