@@ -26,6 +26,7 @@
     > jdk 버전, 주피터 경로에 한글 주의, pc이름 한글 주의
     > conda install -c conda-forge jpype1
    - 데이터를 다분 받음
+   
     > python
     > import nltk
     > nltk.downlad()
