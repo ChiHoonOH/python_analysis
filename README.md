@@ -5,24 +5,23 @@
 
 
 ## 필요 환경
-
--numpy  
--pandas  
--BeautifulSoup  
--selenium  
--seaborn  
--matplotlib  
--sklearn  
--tensorflow   
+- numpy  
+- pandas  
+- BeautifulSoup  
+- selenium  
+- seaborn  
+- matplotlib  
+- sklearn  
+- tensorflow   
 
 ## 폴더별 기능 
 ### basic
--numpy, pandas, seaborn, BeautifulSoup 기본
+- numpy, pandas, seaborn, BeautifulSoup 기본
 
 ### basic_analysis
--basic폴더의 실습 및 자연어,시계열
+- basic폴더의 실습 및 자연어,시계열
 
 ### ML 
--머신러닝 
+- 머신러닝 
 ### DL 
--딥러닝
+- 딥러닝
