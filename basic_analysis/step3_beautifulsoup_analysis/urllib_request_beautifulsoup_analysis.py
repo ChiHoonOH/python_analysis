@@ -85,7 +85,7 @@ class ExchangeDataCrawler:
         conn.close()
 
 if __name__ == '__main__':
-    obj = ExchangeDataCrawler('release')#'release'
+    obj = ExchangeDataCrawler()#'release'
     obj.crawling()
     # 객체 해제
     del obj
@@ -93,4 +93,4 @@ if __name__ == '__main__':
     # 프로세스 종료
     import sys
     print('good bye~')
-    sys.exit(0)
+    sys.exit()
