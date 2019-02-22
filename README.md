@@ -5,13 +5,14 @@
 
 
 ## 2. 필요 환경
-### Tool & Framework
+### 대표 Tool & Framework
 - anaconda3
 - numpy  
 - pandas  
 - BeautifulSoup  
 - selenium  
 - seaborn  
+- folium
 - matplotlib  
 - sklearn  
 - tensorflow   
@@ -28,5 +29,8 @@
 
 ### ML 
 - 머신러닝 
+> 여러가지 머신러닝 기법들(RandomForest, SVM, LogisticRegression ...)
 ### DL 
 - 딥러닝
+> tensorflow(CNN)
+> keras(CNN,RNN,LSTM)
