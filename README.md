@@ -6,7 +6,7 @@
 
 ## 2. 필요 환경
 ### 대표 Tool & Framework
-- anaconda3
+- anaconda3(python 3.6기반,이하 아래의 anaconda 관련 패키지들은 동일한 버전을 가진다.)
 - numpy  
 - pandas  
 - BeautifulSoup  
@@ -16,6 +16,8 @@
 - matplotlib  
 - sklearn  
 - tensorflow   
+- keras 
+
 ### OS
 - Window 8.1 or 10
 
